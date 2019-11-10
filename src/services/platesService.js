@@ -1,4 +1,4 @@
-const platesRepository = require('../repositorio/platesRepository');
+const platesRepository = require('../repository/platesRepository');
 
 module.exports = {
     obterPratos: async () => {

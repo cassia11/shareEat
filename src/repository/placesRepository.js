@@ -5,7 +5,7 @@ const db = require('./database');
 
 //}
 module.exports = {
-    obterLugares: async () => {
+    getPlaces: async () => {
         return new Promise((resolve, reject) => {
             db.all("SELECT * FROM places", (err, rows) => {
                 if (err) {
