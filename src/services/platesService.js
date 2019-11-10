@@ -1,8 +1,8 @@
 const platesRepository = require('../repository/platesRepository');
 
 module.exports = {
-    obterPratos: async () => {
-         return await platesRepository.obterPratos(req.params.id);
+    getPlates: async () => {
+         return await platesRepository.getPlates(req.params.id);
          
     }
 }

@@ -1,8 +1,8 @@
 const platesService = require('./../services/platesService')
 
 module.exports = {
-    obterPratos: async (req, resp) => {
-        const pratos = await platesService.obterPratos(req.params.id);
-        resp.status(200).send(pratos);
+    getPlates: async (req, resp) => {
+        const plates = await platesService.getPlates(req.params.id);
+        resp.status(200).send(plates);
     }
 }

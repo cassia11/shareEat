@@ -12,7 +12,7 @@ router.get('/', (request, response, next) => {
 
 router.get('/lugares', placesController.getPlaces);
 router.get('/:id/pratos', (req, res)=>{
-    res.send(platesController.obterPratos);
+    res.send(platesController.getPlates);
 
 
 })
