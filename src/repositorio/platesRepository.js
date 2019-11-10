@@ -4,7 +4,7 @@ module.exports = {
 
     obterPratos: async (places_id) => {
         return new Promise((resolve, reject) => {
-            db.queryById("SELECT * FROM PLATES WHERE PLACES_ID = ?", [places_id], (err, rows) => {
+            db.queryById("SELECT * FROM plates INNER JOIN places ON places.id = plates.places_id", [places_id], (err, rows) => {
                 if (err) {
                     throw reject(err);
                 }
