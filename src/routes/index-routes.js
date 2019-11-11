@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const lugaresController = require('./../controller/lugaresController');
+const placesController = require('./../controller/placesController');
+const platesController = require('./../controller/platesController')
 
 router.get('/', (request, response, next) => {
     response.status(200).send({
@@ -9,6 +10,10 @@ router.get('/', (request, response, next) => {
     });
 });
 
-router.get('/lugares', lugaresController.obterLugares);
+router.get('/lugares', placesController.getPlaces);
+router.get('/:id/pratos', (req, res)=>{
+    res.send(platesController.getPlates);
 
+
+})
 module.exports = router;
