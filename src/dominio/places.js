@@ -1,6 +1,5 @@
 module.exports = {
     id: 0,
     name: '',
-    plates: []
-
+    plates_qtd: 0
 }
