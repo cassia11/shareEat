@@ -20,9 +20,19 @@ module.exports = {
                     if (err) {
                         throw reject(err);
                     }
-                    
                     return resolve({ status: true, message: 'ok' })
             })
+        })
+    },
+    getQtdForPlace: (places_id) => {
+        return new Promise((resolve, reject) => {
+
+            db.all(`SELECT COUNT(*) FROM plates WHERE places_id = ?`, [places_id], (err, rows) => {
+                if (err) {
+                    throw reject(err);
+                }
+                return resolve(rows);
+            });
         })
     }
 }
