@@ -11,8 +11,6 @@ router.get('/', (request, response, next) => {
 });
 
 router.get('/lugares', placesController.getPlaces);
-router.get('/:id/pratos', (req, res)=>{
-    res.send(platesController.getPlates);
-})
-router.post('/cadastrar', platesController.save);
+router.get('/:id/pratos', platesController.getPlates);
+router.post('/pratos', platesController.save);
 module.exports = router;
