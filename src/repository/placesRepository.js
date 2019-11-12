@@ -1,26 +1,25 @@
 const db = require('./database');
-// var lugar = require('../dominio/places');
 
-// public class LugaresRepositorio() {
-
-//}
 module.exports = {
-    getPlaces: async () => {
+    getPlaces: () => {
         return new Promise((resolve, reject) => {
-            db.all("SELECT * FROM places", (err, rows) => {
+            db.all("SELECT * FROM places", async (err, rows) => {
                 if (err) {
                     throw reject(err);
                 }
 
-                // const lugares = [];
+            // let allPlaces = []
+                // let platesLength = 0
+                // places.map(async (place) => {
+                //     platesLength = await new Promise((resolve, reject) => {
+                //         db.all(`SELECT * FROM plates WHERE places_id = ?`, [place.id], (error, plates) => {
+                //             resolve(plates.length)
+                //         })
+                //     })
 
-                // rows.forEach((item) => {
-                //     lugar.id = item.id;
-                //     lugar.name = item.name;
-                //     lugares.push(lugar);
-                // });
-                    // console.log(lugares)
-                 //   console.log(rows);
+                //     allPlaces.push({ ...place, plates_count: platesLength })
+                // })
+                //return resolve(places);
                 return resolve(rows);
             });
         });
