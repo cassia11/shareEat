@@ -10,8 +10,8 @@ module.exports = {
 
     save: async (req, res) => {
     try {
-      await platesService.save(plate);
-      res.status(200).send({message: 'Prato cadastrado com sucesso!'});
+      await platesService.save(req.body);
+      res.status(201).send({message: 'Prato cadastrado com sucesso!'});
     } catch (e) {
       res.status(500).send({message: 'Falha ao cadastrar um novo prato.'});
     }

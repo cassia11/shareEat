@@ -3,12 +3,12 @@ const plate = require('./../dominio/plates')
 
 
 module.exports = {
-    getPlates: async () => {
-         return await platesRepository.getPlates(req.params.id);
+    getPlates: async (id) => {
+         return await platesRepository.getPlates(id);
          
     }, 
 
-    save:  async () => {
+    save:  async (plate) => {
         await platesRepository.save(plate);      
     }
 }
