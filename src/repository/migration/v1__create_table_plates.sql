@@ -4,5 +4,6 @@ CREATE TABLE plates(
     value REAL NOT NULL,
     description TEXT NOT NULL,
     places_id INTEGER,
-    FOREIGN KEY(places_id) REFERENCES places(id)
+    FOREIGN KEY(places_id) REFERENCES places(id) ON DELETE ACTION CASCADE
 )
+      
