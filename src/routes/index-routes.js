@@ -10,7 +10,9 @@ router.get('/', (request, response, next) => {
     });
 });
 
-router.get('/lugares', placesController.getPlaces);
-router.get('/:id/pratos', platesController.getPlates);
-router.post('/pratos', platesController.save);
+var base = '/api/v1/'
+
+router.get(base + 'lugares', placesController.getPlaces);
+router.get(base + ':id/pratos', platesController.getPlates);
+router.post(base + 'pratos', platesController.save);
 module.exports = router;
