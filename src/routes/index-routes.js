@@ -13,6 +13,7 @@ router.get('/', (request, response, next) => {
 var base = '/api/v1/'
 
 router.get(base + 'lugares', placesController.getPlaces);
+router.get(base + 'lugares/:id', placesController.getPlaceId);
 router.get(base + ':id/pratos', platesController.getPlates);
 router.post(base + 'pratos', platesController.save);
 module.exports = router;
