@@ -44,7 +44,5 @@ npm run dev
 ```
 Apos este comando a aplicação ira iniciar em [localhost](http://localhost:3000) na porta 3000
 
-## Modo de Uso
-
-
-
+## Modo de Uso Swagger
+Acesse [localhost-swagger](http://localhost:3000/api-docs) para ter acesso ao SwaggerUi
