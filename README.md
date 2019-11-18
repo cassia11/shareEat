@@ -2,9 +2,7 @@
 
 ----
 
-<img src='https://img.shields.io/github/tag/cassia11/shareEat.svg' alt='latest semver version' />
-<img src='https://img.shields.io/github/issues/cassia11/shareEat.svg' alt='open issues badge' />
-<img src='https://img.shields.io/github/issues-pr/cassia11/shareEat.svg' alt='open pull requests badge' />
+<img src='https://img.shields.io/github/tag/cassia11/shareEat.svg' alt='latest semver version' /> <img src='https://img.shields.io/github/issues/cassia11/shareEat.svg' alt='open issues badge' /> <img src='https://img.shields.io/github/issues-pr/cassia11/shareEat.svg' alt='open pull requests badge' />
 
 ## Descrição
 Este é um projeto realizado para um desafio de desenvolvimento FullStack.
@@ -23,8 +21,7 @@ O projeto se baseia no site [shareeat](https://shareeat.com.br) e tem por objeti
 * [NodeJs](https://nodejs.org/en/)
 * [Npm](https://nodejs.org/en/download/) incluso no pacote do NodeJS
 
-Obs.: Foi usado NodeJs na versao 12.13.0(LTS) e Npm foi usado a versão 6.13.0,
-ter instalado e rodando os bancos de dados:
+Obs.: Foi usado NodeJs na versao 12.13.0(LTS) e Npm foi usado a versão 6.13.0.
 
 ### Clone o repositorio
 
@@ -35,7 +32,7 @@ git clone https://github.com/cassia11/shareEat.git
 
 ### Dependências:
 
-Antes de mais nada!
+Com o projeto clonado em sua maquina siga os proximos passos.
 
 As dependências devem ser instaladas para poder executar o projeto então rode o comando abaixo:
 ```
@@ -45,8 +42,7 @@ Para executar o projeto rode o comando abaixo:
 ```
 npm run dev
 ```
-
-Com este comando rodando, a aplicação será reconstruída e reiniciará a cada mudança
+Apos este comando a aplicação ira iniciar em [localhost](http://localhost:3000) na porta 3000
 
 ## Modo de Uso
 
